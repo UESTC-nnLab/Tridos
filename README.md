@@ -24,5 +24,42 @@ To our best knowledge, our Tridos is the first work to explore target feature le
 ## PR Curve
 ![PR](PR.png)
 
+## Datasets
+- You can download them directly from the website: [DAUB](https://www.scidb.cn/en/detail?dataSetId=720626420933459968), [ITSDT-15K](https://www.scidb.cn/en/detail?dataSetId=de971a1898774dc5921b68793817916e&dataSetType=journal), [IRDST](https://xzbai.buaa.edu.cn/datasets.html).
+- The COCO format json file needs to be converted into a txt format file. 
+```
+python utils_coco/coco_to_txt.py
+```
+## Usage
+### Train
+```
+CUDA_VISIBLE_DEVICES=0 python train_{dataset}.py
+```
+### Test
+- Usually model_best.pth is not necessarily the best model. The best model may have a lower val_loss or a higher AP50 during verification.
+```
+CUDA_VISIBLE_DEVICES=0 python vid_map_coco.py
+```
+### Visulization
+```
+python vid_predict.py
+```
+## Reference
+1、Z. Ge, S. Liu, F. Wang, Z. Li, and J. Sun, “Yolox: Exceeding yolo series in 2021,” arXiv preprint arXiv:2107.08430, 2021.
+
 ## Contact
 IF any questions, please contact with Weiwei Duan via email: [dwwuestc@163.com]().
+
+## Citation
+If you find this repo useful, please cite our paper.
+```
+@misc{duan2024tripledomainfeaturelearningfrequencyaware,
+      title={Triple-domain Feature Learning with Frequency-aware Memory Enhancement for Moving Infrared Small Target Detection}, 
+      author={Weiwei Duan and Luping Ji and Shengjia Chen and Sicheng Zhu and Mao Ye},
+      year={2024},
+      eprint={2406.06949},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2406.06949}, 
+}
+```
