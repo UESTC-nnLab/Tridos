@@ -3,7 +3,7 @@ This is the respository of  Tridos.
 
 Triple-domain Feature Learning with Frequency-aware Memory Enhancement for Moving Infrared Small Target Detection
 
-We have submited our paper to "IEEE Trans. on Geoscience and Remote Sensing (TGRS)".
+Our paper is accepted to "IEEE Trans. on Geoscience and Remote Sensing (TGRS)".
 
 Currently, it is still in the process of refinement. After the formal publication of the paper, the code will be further improved.
 ![frame](frame.png)
@@ -53,13 +53,15 @@ IF any questions, please contact with Weiwei Duan via email: [dwwuestc@163.com](
 ## Citation
 If you find this repo useful, please cite our paper.
 ```
-@misc{duan2024tripledomainfeaturelearningfrequencyaware,
-      title={Triple-domain Feature Learning with Frequency-aware Memory Enhancement for Moving Infrared Small Target Detection}, 
-      author={Weiwei Duan and Luping Ji and Shengjia Chen and Sicheng Zhu and Mao Ye},
-      year={2024},
-      eprint={2406.06949},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2406.06949}, 
-}
+@ARTICLE{10663463,
+  author={Duan, Weiwei and Ji, Luping and Chen, Shengjia and Zhu, Sicheng and Ye, Mao},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Triple-domain Feature Learning with Frequency-aware Memory Enhancement for Moving Infrared Small Target Detection}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Feature extraction;Frequency-domain analysis;Object detection;Representation learning;Fourier transforms;Data mining;Visual systems;Moving Infrared Small Target Detection;Triple-domain Feature Learning;Fourier Transform;Frequency Aware;Memory Enhancement},
+  doi={10.1109/TGRS.2024.3452175}}
+
 ```
