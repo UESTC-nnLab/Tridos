@@ -51,7 +51,7 @@ python vid_predict.py
 IF any questions, please contact with Weiwei Duan via email: [dwwuestc@163.com]().
 
 ## Update
-# 2024.09.13 All codes are released!
+- 2024.09.13 All codes are released!
 
 ## Citation
 If you find this repo useful, please cite our paper.
