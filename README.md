@@ -1,9 +1,10 @@
+# 2024.09.13 All codes are released!
 # Tridos
 This is the respository of  Tridos.
 
 Triple-domain Feature Learning with Frequency-aware Memory Enhancement for Moving Infrared Small Target Detection
 
-Our paper is accepted to "IEEE Trans. on Geoscience and Remote Sensing (TGRS)".
+Our paper is accepted to "IEEE Trans. on Geoscience and Remote Sensing (TGRS) 2024".
 
 Currently, it is still in the process of refinement. After the formal publication of the paper, the code will be further improved.
 ![frame](frame.png)
