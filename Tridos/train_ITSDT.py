@@ -462,8 +462,8 @@ if __name__ == "__main__":
         if ema:
             ema.updates     = epoch_step * Init_Epoch
         # frames
-        train_dataset = seqDataset(train_annotation_path, input_shape[0], 8, 'train')
-        val_dataset = seqDataset(val_annotation_path, input_shape[0], 8, 'val')
+        train_dataset = seqDataset(train_annotation_path, input_shape[0], 5, 'train')
+        val_dataset = seqDataset(val_annotation_path, input_shape[0], 5, 'val')
 
         
         if distributed:

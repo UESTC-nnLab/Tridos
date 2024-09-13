@@ -72,7 +72,7 @@ if __name__ == "__main__":
     #   classes_path    指向model_data下的txt，与自己训练的数据集相关 
     #                   训练前一定要修改classes_path，使其对应自己的数据集
     #---------------------------------------------------------------------#
-    classes_path    = '/home/dww/OD/two_stream0/model_data/classes.txt'
+    classes_path    = 'model_data/classes.txt'
     #----------------------------------------------------------------------------------------------------------------------------#
     #   权值文件的下载请看README，可以通过网盘下载。模型的 预训练权重 对不同数据集是通用的，因为特征是通用的。
     #   模型的 预训练权重 比较重要的部分是 主干特征提取网络的权值部分，用于进行特征提取。
@@ -92,7 +92,7 @@ if __name__ == "__main__":
     #      可以设置mosaic=True，直接随机初始化参数开始训练，但得到的效果仍然不如有预训练的情况。（像COCO这样的大数据集可以这样做）
     #   2、了解imagenet数据集，首先训练分类模型，获得网络的主干部分权值，分类模型的 主干部分 和该模型通用，基于此进行训练。
     #----------------------------------------------------------------------------------------------------------------------------#
-    model_path      = '/home/dww/OD/two_stream0/model_data/yolox_s.pth'
+    model_path      = 'model_data/yolox_s.pth'
     # model_path      = ''
     #------------------------------------------------------#
     #   input_shape     输入的shape大小，一定要是32的倍数
@@ -277,7 +277,7 @@ if __name__ == "__main__":
     #   创建yolo模型
     #------------------------------------------------------#
     # model = YoloBody(num_classes, phi)
-    model = slowfastnet(num_classes=1, num_frame=2)
+    model = slowfastnet(num_classes=1, num_frame=5)
     weights_init(model)
     if model_path != '':
         #------------------------------------------------------#
@@ -458,8 +458,8 @@ if __name__ == "__main__":
         if ema:
             ema.updates     = epoch_step * Init_Epoch
         #change frames
-        train_dataset = seqDataset(train_annotation_path, input_shape[0], 2, 'train')
-        val_dataset = seqDataset(val_annotation_path, input_shape[0], 2, 'val')
+        train_dataset = seqDataset(train_annotation_path, input_shape[0], 5, 'train')
+        val_dataset = seqDataset(val_annotation_path, input_shape[0], 5, 'val')
 
         
         if distributed:
