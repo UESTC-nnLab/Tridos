@@ -25,7 +25,7 @@ To our best knowledge, our Tridos is the first work to explore target feature le
 ![PR](PR.png)
 
 ## Datasets
-- You can download them directly from the website: [DAUB](https://www.scidb.cn/en/detail?dataSetId=720626420933459968), [ITSDT-15K](https://www.scidb.cn/en/detail?dataSetId=de971a1898774dc5921b68793817916e&dataSetType=journal), [IRDST](https://xzbai.buaa.edu.cn/datasets.html). You can also directly download [ITSDT-15K](https://drive.google.com/file/d/1M7bUpnaKnNvBDtpgqL2haAdN_O9bOM-_/view?usp=sharing) on this.
+- You can download them directly from the website: [DAUB](https://www.scidb.cn/en/detail?dataSetId=720626420933459968), [ITSDT-15K](https://www.scidb.cn/en/detail?dataSetId=de971a1898774dc5921b68793817916e&dataSetType=journal), [IRDST](https://xzbai.buaa.edu.cn/datasets.html). You can also directly download the organized version of our paper. [ITSDT-15K](https://drive.google.com/file/d/1nnlXK0QCoFqToOL-7WdRQCZfbGJvHLh2/view?usp=sharing). 
 - The COCO format json file needs to be converted into a txt format file. 
 ```
 python utils_coco/coco_to_txt.py
